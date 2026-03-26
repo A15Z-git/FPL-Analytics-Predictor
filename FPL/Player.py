@@ -39,7 +39,7 @@ class Player:
         self.team = self.gwData['team'].item()
 
 
-Erling_Haaland=Player('Erling Haaland')
-print(Erling_Haaland.team)
+#Erling_Haaland=Player('Erling Haaland')
+#print(Erling_Haaland.team)
 
 
