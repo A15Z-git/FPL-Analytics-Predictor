@@ -9,3 +9,5 @@ Defensive contributions do play a good role in the latest season however since i
 If I decide to implement it live I will use data from 25-26 to create a metric and implement it for 26-27. Skipping for now.
 
 
+I have 3 Projects this Quarter so have to postpone unfortunately.
+
