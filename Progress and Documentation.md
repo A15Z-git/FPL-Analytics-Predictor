@@ -20,3 +20,16 @@ This is essentially a linear regression equation so it would be nice to how it c
 I also scraped through the data and found some extra info I would need from extra csv outside my base. Some notes on a few variables I am unsure about
 
 -The per 90 is annoying. Efficiency is important but results more so, as I do not really care about the most efficient players necessarily but the best players. However efficiency can be important as an player who is amazing but got injured mid season would still be really good. However, they may still be effected by injury so idk a lot to consider I cannot exactly quantify. If I do use efficiency I think I will have minimum standards for a player to pass my pick screening, but then that introduces problem of new transfers. My thought process is perhaps use player value as another metric that could pass the screening. A young rookie player who is getting more minutes is unlikely to become an immediate breakout star, but an expensive signing will surely get game time despite being new.
+
+
+
+A lot of progress was made on the 6th of August (8/6 was actually 8/5). I have a detailed idea of the things to plan so a base TO DO is listed below:
+
+1) Get team data and figure out a way to use the FPL AI for live data updates
+2) Create necessary features and begin pipeline to create the prediction system
+3) Decide how to start training
+4) Algorithms to pick the team
+5) Test with no constraints
+6) Add budget and swap constraints
+7) Validate and Test
+8) Maybe add the special powers/rules
