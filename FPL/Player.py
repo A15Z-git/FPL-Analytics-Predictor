@@ -1,7 +1,11 @@
 import pandas as pd
 
+
+
 # URL of the CSV file (example)
 url = "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/master/data/2024-25/gws/merged_gw.csv"
+
+
 
 # Read the CSV file into a pandas DataFrame
 df = pd.read_csv(url)
@@ -15,10 +19,11 @@ class Player:
 
         #Cumulative stats
         self.TotalPoints=self.Data['total_points'].sum()
-        self.xP=self.Data['xP'].sum()
+        self.TotalMinutes=self.Data['minutes'].sum()
+        #self.xP=self.Data['xP'].sum()  might not want as post match, essentially what we are trying to find ourselves
         self.assists=self.Data['assists'].sum()
         self.clean_sheets=self.Data['clean_sheets'].sum()
-        self.creativity=self.Data['creativity'].sum() #replace with ICT index
+        self.ict=self.Data['ict_index'].sum() #replace with ICT index
 
         #more expected
         self.expected_assists=self.Data['expected_assists'].sum()
@@ -33,13 +38,19 @@ class Player:
         self.gwPoints = self.gwData['total_points'].sum()
         self.starts=self.Data['starts'].sum()
         self.fixture=self.gwData['fixture'].item()
+        self.minutes=self.gwData['minutes']
 
         #Player Details
         self.position = self.gwData['position'].item()
         self.team = self.gwData['team'].item()
+        self.home=self.gwData['was_home'].item()
+
+
+        #
+
 
 
 #Erling_Haaland=Player('Erling Haaland')
-#print(Erling_Haaland.team)
+#rint(Erling_Haaland.home)
 
 

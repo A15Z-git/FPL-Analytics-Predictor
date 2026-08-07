@@ -13,6 +13,7 @@ df = pd.read_csv(url)
 Sample=df.sort_values(by='name')
 name_list=Sample.loc[::38,'name'].values
 
+
 #I create a list of classes below for easier access.
 players=[Pl.Player(name) for name in name_list]
 
@@ -36,6 +37,9 @@ del player
 Best11=[]
 for i in range(11):
     Best11.append(Pts[i])
+
+
+
 
 
 
