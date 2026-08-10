@@ -26,10 +26,13 @@ I also scraped through the data and found some extra info I would need from extr
 A lot of progress was made on the 6th of August (8/6 was actually 8/5). I have a detailed idea of the things to plan so a base TO DO is listed below:
 
 1) Get team data and figure out a way to use the FPL AI for live data updates
-2) Create necessary features and begin pipeline to create the prediction system
+2) Create necessary features and begin pipeline to create the prediction system  <- currently here
 3) Decide how to start training
 4) Algorithms to pick the team
 5) Test with no constraints
 6) Add budget and swap constraints
 7) Validate and Test
 8) Maybe add the special powers/rules
+
+The way I am imagining fixing relegation is using understat (check renaming issues) to having the 3 newly promoted teams have a proxy name so they inherit the prior stats
+of the 3 old relegated teams (since I know, I can manually calculated and then each loop if name is proxy they inherit).
